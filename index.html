@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arya R N - Data Engineer Portfolio</title>
+  <style>
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background: #0f172a;color: #e2e8f0;margin: 0;padding: 0;}
+    .container {max-width: 1100px;margin: 0 auto;padding: 28px;}
+    header {text-align: center;margin-bottom: 30px;}
+    h1 {font-size: 2.5rem;background: linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom: 8px;}
+    .tagline {color: #94a3b8;margin-bottom: 10px;}
+    .contact a {color: #3b82f6;text-decoration:none;margin:0 8px;}
+    .section {margin: 32px 0;}
+    .section-title {font-size: 1.6rem;margin-bottom: 12px;color: #e6eef8;}
+    .cert-grid, .skills-grid {display: grid;gap: 16px;}
+    .cert-grid {grid-template-columns: repeat(auto-fit,minmax(240px,1fr));}
+    .skills-grid {grid-template-columns: repeat(auto-fit,minmax(320px,1fr));}
+    .card {background: rgba(30,41,59,0.6);padding: 16px;border-radius: 10px;border: 1px solid rgba(59,130,246,0.08);}
+    .muted {color: #94a3b8;font-size: 0.95rem;}
+    .tag {display:inline-block;background:rgba(139,92,246,0.1);color:#c4b5fd;padding:6px 10px;border-radius:999px;margin:3px;font-size:0.9rem;}
+    footer {text-align: center;color:#94a3b8;border-top:1px solid rgba(59,130,246,0.06);padding:20px;margin-top:30px;}
+    a {color:#8b5cf6;text-decoration:none;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="name"></h1>
+      <p class="tagline" id="tagline"></p>
+      <p class="muted" id="subtitle"></p>
+      <div class="contact" id="contact"></div>
+    </header>
+
+    <section class="section">
+      <div class="section-title">Certifications</div>
+      <div id="certifications" class="cert-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Technical Skills</div>
+      <div id="skills" class="skills-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Professional Experience</div>
+      <div id="experience"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Education</div>
+      <div id="education"></div>
+    </section>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script>
+    // Fetch data from external config.json
+    fetch('config.json')
+      .then(res => res.json())
+      .then(data => initPortfolio(data));
+
+    function initPortfolio(data) {
+      const personal = data.personal;
+      document.getElementById('name').textContent = personal.name;
+      document.getElementById('tagline').textContent = personal.tagline;
+      document.getElementById('subtitle').textContent = personal.subtitle;
+      document.getElementById('contact').innerHTML = `
+        <a href="mailto:${personal.email}">📧 Email</a>
+        <a href="${personal.linkedin}" target="_blank">💼 LinkedIn</a>
+        <a href="${personal.github}" target="_blank">🐙 GitHub</a>
+      `;
+
+      renderCertifications(data.certifications);
+      renderSkills(data.skills);
+      renderExperience(data.experience);
+      renderEducation(data.education);
+      document.getElementById('footer').innerHTML = `${data.footer.copyright}<div class='muted' style='margin-top:6px;'>${data.footer.tagline}</div>`;
+    }
+
+    function renderCertifications(certs){
+      const ctn = document.getElementById('certifications');
+      certs.forEach(c => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h3>${c.icon || ''} ${c.name}</h3>
+          <div class="muted">${c.provider} • ${c.validity}</div>
+          ${c.link ? `<div style='margin-top:10px;'><a href='${c.link}' target='_blank'>View Certificate</a></div>` : ''}
+        `;
+        ctn.appendChild(card);
+      });
+    }
+
+    // Arrange skills logically for Data Engineer: Cloud → Data Engineering → Programming → Analytics
+    function renderSkills(skills){
+      const ctn = document.getElementById('skills');
+      const order = ['Cloud & Infrastructure', 'Data Engineering & Warehousing', 'Programming & Automation', 'Analytics & Visualization'];
+      skills.sort((a,b)=>order.indexOf(a.category)-order.indexOf(b.category));
+
+      skills.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h3>${s.icon || ''} ${s.category}</h3>
+<!--          <div class='muted'>${s.skills.join(' • ')}</div>-->
+          <div>${s.skills.map(t=>`<span class='tag'>${t}</span>`).join('')}</div>
+        `;
+
+        if(s.courses && s.courses.length>0){
+          const courseDiv = document.createElement('div');
+          courseDiv.innerHTML = `<strong>📚 Courses</strong>`;
+          s.courses.forEach(c => {
+            const ci = document.createElement('div');
+            ci.style.margin = '6px 0';
+            ci.innerHTML = `${c.name} - <span class='muted'>${c.provider}</span>${c.link?` (<a href='${c.link}' target='_blank'>Link</a>)`:''}`;
+            courseDiv.appendChild(ci);
+          });
+          card.appendChild(courseDiv);
+        }
+
+        if(s.projects && s.projects.length>0){
+          const projectDiv = document.createElement('div');
+          projectDiv.style.marginTop = '8px';
+          projectDiv.innerHTML = `<strong>🚀 Projects</strong>`;
+          s.projects.forEach(p => {
+            const pi = document.createElement('div');
+            pi.style.margin = '6px 0';
+            pi.innerHTML = `${p.name} <div class='muted'>${p.description || ''}</div>${p.link?`<div><a href='${p.link}' target='_blank'>View Project</a></div>`:''}`;
+            projectDiv.appendChild(pi);
+          });
+          card.appendChild(projectDiv);
+        }
+
+        ctn.appendChild(card);
+      });
+    }
+
+    function renderExperience(exps){
+      const ctn = document.getElementById('experience');
+      exps.forEach(e => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<h3>${e.title}</h3><div class='muted'>${e.company} • ${e.period}</div><ul>${e.achievements.map(a=>`<li>${a}</li>`).join('')}</ul>`;
+        ctn.appendChild(card);
+      });
+    }
+
+    function renderEducation(ed){
+      document.getElementById('education').innerHTML = `<div class='card'><h3>${ed.degree}</h3><div class='muted'>${ed.field} • ${ed.institution} • ${ed.period}</div></div>`;
+    }
+  </script>
+</body>
+</html>
