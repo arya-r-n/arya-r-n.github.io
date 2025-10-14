@@ -11,6 +11,9 @@
     h1 {font-size: 2.5rem;background: linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom: 8px;}
     .tagline {color: #94a3b8;margin-bottom: 10px;}
     .contact a {color: #3b82f6;text-decoration:none;margin:0 8px;}
+    .nav-section {text-align: center;margin: 20px 0;padding: 16px;background: rgba(59,130,246,0.05);border-radius: 8px;}
+    .nav-btn {display: inline-block;background: linear-gradient(135deg,#3b82f6,#8b5cf6);color: white;padding: 12px 24px;border-radius: 6px;text-decoration: none;font-weight: 600;transition: transform 0.2s;}
+    .nav-btn:hover {transform: translateY(-2px);}
     .section {margin: 32px 0;}
     .section-title {font-size: 1.6rem;margin-bottom: 12px;color: #e6eef8;}
     .cert-grid, .skills-grid {display: grid;gap: 16px;}
@@ -18,7 +21,14 @@
     .skills-grid {grid-template-columns: repeat(auto-fit,minmax(320px,1fr));}
     .card {background: rgba(30,41,59,0.6);padding: 16px;border-radius: 10px;border: 1px solid rgba(59,130,246,0.08);}
     .muted {color: #94a3b8;font-size: 0.95rem;}
-    .tag {display:inline-block;background:rgba(139,92,246,0.1);color:#c4b5fd;padding:6px 10px;border-radius:999px;margin:3px;font-size:0.9rem;}
+    .tag {display:inline-block;background:rgba(139,92,246,0.1);color:#c4b5fd;padding:6px 10px;border-radius:999px;margin:3px;font-size:0.9rem;position:relative;}
+    .tag.expandable {cursor:pointer;transition: all 0.2s;padding-right:24px;}
+    .tag.expandable:hover {background:rgba(139,92,246,0.2);transform: translateY(-1px);}
+    .tag-indicator {position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.7rem;transition: transform 0.3s;}
+    .tag-indicator.expanded {transform:translateY(-50%) rotate(180deg);}
+    .skill-details-popup {position:absolute;top:100%;left:0;background:rgba(15,23,42,0.98);border:1px solid rgba(139,92,246,0.3);border-radius:8px;padding:12px;margin-top:4px;z-index:10;min-width:300px;max-width:400px;display:none;box-shadow: 0 8px 16px rgba(0,0,0,0.3);}
+    .skill-details-popup.show {display:block;}
+    .tag-wrapper {position:relative;display:inline-block;}
     footer {text-align: center;color:#94a3b8;border-top:1px solid rgba(59,130,246,0.06);padding:20px;margin-top:30px;}
     a {color:#8b5cf6;text-decoration:none;}
   </style>
@@ -31,6 +41,7 @@
       <p class="muted" id="subtitle"></p>
       <div class="contact" id="contact"></div>
     </header>
+
 
     <section class="section">
       <div class="section-title">Certifications</div>
@@ -52,6 +63,10 @@
       <div id="education"></div>
     </section>
 
+    <div class="nav-section">
+      <a href="learning_plan.html" class="nav-btn">📚 View My Learning Plan</a>
+    </div>
+
     <footer id="footer"></footer>
   </div>
 
@@ -67,9 +82,9 @@
       document.getElementById('tagline').textContent = personal.tagline;
       document.getElementById('subtitle').textContent = personal.subtitle;
       document.getElementById('contact').innerHTML = `
-        <a href="mailto:${personal.email}">📧 Email</a>
-        <a href="${personal.linkedin}" target="_blank">💼 LinkedIn</a>
-        <a href="${personal.github}" target="_blank">🐙 GitHub</a>
+        <a href="mailto:${personal.email}">Email</a>
+        <a href="${personal.linkedin}" target="_blank">LinkedIn</a>
+        <a href="${personal.github}" target="_blank">GitHub</a>
       `;
 
       renderCertifications(data.certifications);
@@ -102,37 +117,83 @@
       skills.forEach(s => {
         const card = document.createElement('div');
         card.className = 'card';
-        card.innerHTML = `
-          <h3>${s.icon || ''} ${s.category}</h3>
-<!--          <div class='muted'>${s.skills.join(' • ')}</div>-->
-          <div>${s.skills.map(t=>`<span class='tag'>${t}</span>`).join('')}</div>
-        `;
 
-        if(s.courses && s.courses.length>0){
-          const courseDiv = document.createElement('div');
-          courseDiv.innerHTML = `<strong>📚 Courses</strong>`;
-          s.courses.forEach(c => {
-            const ci = document.createElement('div');
-            ci.style.margin = '6px 0';
-            ci.innerHTML = `${c.name} - <span class='muted'>${c.provider}</span>${c.link?` (<a href='${c.link}' target='_blank'>Link</a>)`:''}`;
-            courseDiv.appendChild(ci);
-          });
-          card.appendChild(courseDiv);
-        }
+        card.innerHTML = `<h3>${s.icon || ''} ${s.category}</h3>`;
 
-        if(s.projects && s.projects.length>0){
-          const projectDiv = document.createElement('div');
-          projectDiv.style.marginTop = '8px';
-          projectDiv.innerHTML = `<strong>🚀 Projects</strong>`;
-          s.projects.forEach(p => {
-            const pi = document.createElement('div');
-            pi.style.margin = '6px 0';
-            pi.innerHTML = `${p.name} <div class='muted'>${p.description || ''}</div>${p.link?`<div><a href='${p.link}' target='_blank'>View Project</a></div>`:''}`;
-            projectDiv.appendChild(pi);
-          });
-          card.appendChild(projectDiv);
-        }
+        const tagsContainer = document.createElement('div');
 
+        s.skills.forEach(skill => {
+          const skillName = typeof skill === 'string' ? skill : skill.name;
+          const hasDetails = (skill.courses && skill.courses.length > 0) ||
+                            (skill.certifications && skill.certifications.length > 0) ||
+                            (skill.projects && skill.projects.length > 0);
+
+          const wrapper = document.createElement('div');
+          wrapper.className = 'tag-wrapper';
+
+          const tag = document.createElement('span');
+          tag.className = hasDetails ? 'tag expandable' : 'tag';
+          tag.innerHTML = `${skillName}${hasDetails ? '<span class="tag-indicator">▼</span>' : ''}`;
+
+          if (hasDetails) {
+            const popup = document.createElement('div');
+            popup.className = 'skill-details-popup';
+
+            let popupHTML = '';
+
+            if (skill.courses && skill.courses.length > 0) {
+              popupHTML += `<div style="margin-bottom:8px;"><strong>📚 Courses</strong></div>`;
+              skill.courses.forEach(c => {
+                popupHTML += `<div style="margin:4px 0;font-size:0.85rem;">${c.name} - <span class='muted'>${c.provider}</span>${c.link ? ` <a href='${c.link}' target='_blank'>↗</a>` : ''}</div>`;
+              });
+            }
+
+            if (skill.certifications && skill.certifications.length > 0) {
+              popupHTML += `<div style="margin:8px 0 4px 0;"><strong>🏆 Certifications</strong></div>`;
+              skill.certifications.forEach(c => {
+                popupHTML += `<div style="margin:4px 0;font-size:0.85rem;">${c.name} - <span class='muted'>${c.provider}</span>${c.link ? ` <a href='${c.link}' target='_blank'>↗</a>` : ''}</div>`;
+              });
+            }
+
+            if (skill.projects && skill.projects.length > 0) {
+              popupHTML += `<div style="margin:8px 0 4px 0;"><strong>🚀 Projects</strong></div>`;
+              skill.projects.forEach(p => {
+                popupHTML += `<div style="margin:4px 0;font-size:0.85rem;">${p.name}${p.description ? `<div class='muted' style='font-size:0.8rem;'>${p.description}</div>` : ''}${p.link ? ` <a href='${p.link}' target='_blank'>↗</a>` : ''}</div>`;
+              });
+            }
+
+            popup.innerHTML = popupHTML;
+            wrapper.appendChild(tag);
+            wrapper.appendChild(popup);
+
+            tag.addEventListener('click', (e) => {
+              e.stopPropagation();
+              document.querySelectorAll('.skill-details-popup').forEach(p => {
+                if (p !== popup) p.classList.remove('show');
+              });
+              document.querySelectorAll('.tag-indicator').forEach(i => {
+                if (i !== tag.querySelector('.tag-indicator')) i.classList.remove('expanded');
+              });
+              popup.classList.toggle('show');
+              const indicator = tag.querySelector('.tag-indicator');
+              if (indicator) indicator.classList.toggle('expanded');
+            });
+
+            document.addEventListener('click', (e) => {
+              if (!wrapper.contains(e.target)) {
+                popup.classList.remove('show');
+                const indicator = tag.querySelector('.tag-indicator');
+                if (indicator) indicator.classList.remove('expanded');
+              }
+            });
+          } else {
+            wrapper.appendChild(tag);
+          }
+
+          tagsContainer.appendChild(wrapper);
+        });
+
+        card.appendChild(tagsContainer);
         ctn.appendChild(card);
       });
     }
