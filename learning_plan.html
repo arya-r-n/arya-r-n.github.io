@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Plan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin: 10px 0;
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      margin: 40px 0;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .category-title {
+      font-size: 1.8rem;
+      color: #e6eef8;
+      margin: 0;
+    }
+
+    .category-icon {
+      font-size: 2rem;
+    }
+
+    .skill-card {
+      background: rgba(30, 41, 59, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(59, 130, 246, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      font-size: 1.4rem;
+      color: #e6eef8;
+      margin-bottom: 6px;
+    }
+
+    .skill-description {
+      color: #94a3b8;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .subsection {
+      margin: 16px 0;
+    }
+
+    .subsection-title {
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .item {
+      background: rgba(15, 23, 42, 0.4);
+      padding: 12px;
+      border-radius: 6px;
+      margin: 8px 0;
+      border-left: 3px solid rgba(139, 92, 246, 0.5);
+    }
+
+    .item-name {
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+
+    .item-provider {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .item-description {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .item-tech {
+      color: #8b5cf6;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .item-link {
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 6px;
+      display: inline-block;
+    }
+
+    .item-link:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.1);
+      color: #60a5fa;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      border-top: 1px solid rgba(59, 130, 246, 0.06);
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Learning Plan</h1>
+      <a href="index.html" class="nav-link">← Back to Portfolio</a>
+    </header>
+
+    <div id="learning-content"></div>
+
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+
+  <script>
+    fetch('learning_plan.json')
+      .then(res => res.json())
+      .then(data => initLearningPlan(data))
+      .catch(err => {
+        document.getElementById('learning-content').innerHTML =
+          '<p style="color: #ef4444;">Error loading learning plan. Please check learning_plan.json</p>';
+      });
+
+    function initLearningPlan(data) {
+       if (data.goal) {
+        document.getElementById('goal').textContent = `Career Goal: ${data.goal}`;
+      }
+
+      const content = document.getElementById('learning-content');
+
+      data.categories.forEach(category => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.className = 'category';
+
+        categoryDiv.innerHTML = `
+          <div class="category-header">
+            <span class="category-icon">${category.icon || '📖'}</span>
+            <h2 class="category-title">${category.name}</h2>
+          </div>
+        `;
+
+        category.skills.forEach(skill => {
+          const skillCard = document.createElement('div');
+          skillCard.className = 'skill-card';
+
+          let skillHTML = `
+            <h3 class="skill-name">${skill.name}</h3>
+            <p class="skill-description">${skill.description}</p>
+          `;
+
+          // Courses
+          if (skill.courses && skill.courses.length > 0) {
+            skillHTML += `<div class="subsection">
+              <div class="subsection-title">📚 Recommended Courses</div>`;
+            skill.courses.forEach(course => {
+              skillHTML += `
+                <div class="item">
+                  <div class="item-name">${course.name}</div>
+                  <div class="item-provider">${course.provider}</div>
+                  ${course.link ? `<a href="${course.link}" target="_blank" class="item-link">View Course →</a>` : ''}
+                </div>
+              `;
+            });
+            skillHTML += `</div>`;
+          }
+
+          // Certifications
+          if (skill.certifications && skill.certifications.length > 0) {
+            skillHTML += `<div class="subsection">
+              <div class="subsection-title">🏆 Certifications</div>`;
+            skill.certifications.forEach(cert => {
+              skillHTML += `
+                <div class="item">
+                  <div class="item-name">${cert.name}</div>
+                  <div class="item-provider">${cert.provider}</div>
+                  ${cert.link ? `<a href="${cert.link}" target="_blank" class="item-link">Learn More →</a>` : ''}
+                </div>
+              `;
+            });
+            skillHTML += `</div>`;
+          }
+
+          // Projects
+          if (skill.projects && skill.projects.length > 0) {
+            skillHTML += `<div class="subsection">
+              <div class="subsection-title">🚀 Practice Projects</div>`;
+            skill.projects.forEach(project => {
+              skillHTML += `
+                <div class="item">
+                  <div class="item-name">${project.name}</div>
+                  ${project.description ? `<div class="item-description">${project.description}</div>` : ''}
+                  ${project.technologies ? `<div class="item-tech">Technologies: ${project.technologies}</div>` : ''}
+                  ${project.link ? `<a href="${project.link}" target="_blank" class="item-link">View Project →</a>` : ''}
+                </div>
+              `;
+            });
+            skillHTML += `</div>`;
+          }
+
+          skillCard.innerHTML = skillHTML;
+          categoryDiv.appendChild(skillCard);
+        });
+
+        content.appendChild(categoryDiv);
+      });
+    }
+  </script>
+</body>
+
+</html>
