@@ -1,0 +1,2370 @@
+{
+  "categories": [
+    {
+      "name": "Core & Foundational Skills",
+      "icon": "\ud83e\uddf1",
+      "skills": [
+        {
+          "name": "SQL & Advanced SQL",
+          "description": "Writing complex queries, window functions, CTEs, and query optimization.",
+          "courses": [
+            {
+              "name": "SQL for Data Science",
+              "provider": "Coursera (UC Davis)",
+              "link": "https://www.coursera.org/learn/sql-for-data-science"
+            },
+            {
+              "name": "The Complete SQL Bootcamp: Go from Zero to Hero",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/the-complete-sql-bootcamp/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Oracle Database SQL Certified Associate",
+              "provider": "Oracle",
+              "link": "https://education.oracle.com/oracle-database-sql-certified-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Analytics Warehouse SQL Portfolio",
+              "description": "Design a star schema and write 20+ analytical SQL queries including window functions and CTEs.",
+              "technologies": "PostgreSQL, dbt, SQL"
+            }
+          ]
+        },
+        {
+          "name": "Python",
+          "description": "Scripting, automation, data manipulation, typing, packaging.",
+          "courses": [
+            {
+              "name": "Python for Everybody Specialization",
+              "provider": "Coursera (UMich)",
+              "link": "https://www.coursera.org/specializations/python"
+            },
+            {
+              "name": "Complete Python Developer in 2024: Zero to Mastery",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/complete-python-developer-zero-to-mastery/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Engineering Utilities Package",
+              "description": "Build a Python package with ETL helpers, logging, and retry decorators.",
+              "technologies": "Python, Poetry, pytest"
+            }
+          ]
+        },
+        {
+          "name": "Pandas",
+          "description": "Data manipulation, joins, aggregations, time series.",
+          "courses": [
+            {
+              "name": "Data Analysis with Python",
+              "provider": "Coursera (IBM)",
+              "link": "https://www.coursera.org/learn/data-analysis-with-python"
+            },
+            {
+              "name": "Python for Data Science and Machine Learning Bootcamp",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Cleaning & EDA Notebook",
+              "description": "Create a robust EDA workflow with profiling, joins, aggregation and IO to Parquet.",
+              "technologies": "Python, Pandas, Jupyter"
+            }
+          ]
+        },
+        {
+          "name": "NumPy",
+          "description": "Numerical computing, vectorization, broadcasting.",
+          "courses": [
+            {
+              "name": "Introduction to Data Science in Python",
+              "provider": "Coursera (UMich)",
+              "link": "https://www.coursera.org/learn/python-data-analysis"
+            },
+            {
+              "name": "NumPy, Pandas, Matplotlib in Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/numpy-pandas-matplotlib-seaborn/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Vectorized ETL Transforms",
+              "description": "Showcase vectorized transformations replacing loops in data preprocessing.",
+              "technologies": "Python, NumPy"
+            }
+          ]
+        },
+        {
+          "name": "Shell Scripting (Bash)",
+          "description": "Automation and system management in Linux environments.",
+          "courses": [
+            {
+              "name": "Linux and Bash for Data Engineering",
+              "provider": "Coursera (IBM)",
+              "link": "https://www.coursera.org/learn/linux-and-bash-for-data-engineering"
+            },
+            {
+              "name": "Linux Shell Scripting: A Project-Based Approach",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/linux-shell-scripting-projects/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "CLI Data Pipeline Toolkit",
+              "description": "Write Bash scripts for ingestion, file validation, and scheduling via cron.",
+              "technologies": "Bash, curl, jq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data Warehousing & Lakehouses",
+      "icon": "\ud83c\udfd7\ufe0f",
+      "skills": [
+        {
+          "name": "Snowflake",
+          "description": "Cloud data platform for data warehousing and lakehouses.",
+          "courses": [
+            {
+              "name": "Snowflake for Data Lakes & Warehouses",
+              "provider": "Coursera (Snowflake & LearnQuest)",
+              "link": "https://www.coursera.org/learn/snowflake-data-warehousing"
+            },
+            {
+              "name": "Snowflake Masterclass: Hands-On Cloud Data Warehousing",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/snowflake-masterclass/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "SnowPro Core Certification",
+              "provider": "Snowflake",
+              "link": "https://www.snowflake.com/en/certifications/snowpro-core/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Snowflake ELT Project",
+              "description": "Ingest CSV/JSON to Snowflake and transform with tasks & streams.",
+              "technologies": "Snowflake, SnowSQL, dbt"
+            }
+          ]
+        },
+        {
+          "name": "Google BigQuery",
+          "description": "Google Cloud's serverless data warehouse.",
+          "courses": [
+            {
+              "name": "From Data to Insights with Google Cloud",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/from-data-to-insights-google-cloud"
+            },
+            {
+              "name": "Google BigQuery: The Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-bigquery-the-complete-guide/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Professional Data Engineer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/certification/data-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "BigQuery Analytics Sandbox",
+              "description": "Load public datasets and build partitioned/clustered tables with cost-aware queries.",
+              "technologies": "BigQuery, SQL"
+            }
+          ]
+        },
+        {
+          "name": "Amazon Redshift",
+          "description": "AWS cloud data warehouse for analytics at scale.",
+          "courses": [
+            {
+              "name": "Amazon Redshift: The Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/amazon-redshift/"
+            },
+            {
+              "name": "AWS Cloud Technical Essentials",
+              "provider": "Coursera (AWS)",
+              "link": "https://www.coursera.org/learn/aws-cloud-technical-essentials"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Data Analytics \u2013 Specialty",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-data-analytics-specialty/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Redshift Data Mart",
+              "description": "Create sort/dist keys, WLM queues, and performance-tuned queries.",
+              "technologies": "AWS Redshift, SQL"
+            }
+          ]
+        },
+        {
+          "name": "Databricks (Delta Lake)",
+          "description": "Unified lakehouse platform with Delta Lake.",
+          "courses": [
+            {
+              "name": "Data Engineering with Databricks",
+              "provider": "Coursera (Databricks)",
+              "link": "https://www.coursera.org/learn/data-engineering-databricks"
+            },
+            {
+              "name": "Databricks & PySpark for Data Engineers (Project-Based)",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/databricks-pyspark-data-engineers/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Databricks Certified Data Engineer Associate",
+              "provider": "Databricks",
+              "link": "https://www.databricks.com/learn/certification/data-engineer-associate"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Delta Lakehouse",
+              "description": "Build bronze\u2013silver\u2013gold pipelines with Auto Loader and Delta Live Tables.",
+              "technologies": "Databricks, PySpark, Delta Lake"
+            }
+          ]
+        },
+        {
+          "name": "Data Modeling",
+          "description": "Designing how data is stored and related (ERD, normalization).",
+          "courses": [
+            {
+              "name": "Data Warehouse Concepts, Design, and Data Integration",
+              "provider": "Coursera (IBM)",
+              "link": "https://www.coursera.org/learn/data-warehousing-business-intelligence"
+            },
+            {
+              "name": "Data Modeling and Relational Database Design",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-modeling-and-relational-database-design/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Enterprise Data Model",
+              "description": "Produce ERDs and a conformed dimensional model for a mock company.",
+              "technologies": "draw.io, SQL, dbt"
+            }
+          ]
+        },
+        {
+          "name": "Dimensional Modeling",
+          "description": "Designing schemas for analytics (star/snowflake, SCD).",
+          "courses": [
+            {
+              "name": "Dimensional Modeling",
+              "provider": "Coursera (IBM)",
+              "link": "https://www.coursera.org/learn/dimensional-modeling"
+            },
+            {
+              "name": "Data Modeling and Relational Database Design",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-modeling-and-relational-database-design/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Kimball Case Study",
+              "description": "Model sales & inventory with slowly changing dimensions (SCD).",
+              "technologies": "dbt, SQL"
+            }
+          ]
+        },
+        {
+          "name": "Data Vault",
+          "description": "Methodology for long-term historical storage (DV2.0).",
+          "courses": [
+            {
+              "name": "Data Vault Modeling Explained with Examples",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-vault-modeling/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Vault 2.0 Mini-Warehouse",
+              "description": "Model hubs, links, satellites from source change logs.",
+              "technologies": "PostgreSQL, dbt"
+            }
+          ]
+        },
+        {
+          "name": "ETL/ELT Design",
+          "description": "Patterns for extracting, transforming, and loading data.",
+          "courses": [
+            {
+              "name": "ETL & Data Pipelines with Shell, Airflow and Kafka",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/etl-data-pipelines-with-shell-airflow-and-kafka/"
+            },
+            {
+              "name": "Apache Airflow: The Hands-On Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Batch & ELT Pipeline",
+              "description": "Build ingestion -> raw -> staged -> marts with orchestration.",
+              "technologies": "Airflow/Prefect, SQL, Python"
+            }
+          ]
+        },
+        {
+          "name": "Data Quality & Validation",
+          "description": "Checks and balances to ensure data accuracy and trust.",
+          "courses": [
+            {
+              "name": "Data Quality Fundamentals",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-quality-fundamentals/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Quality Test Suite",
+              "description": "Great Expectations checks, freshness SLAs, and alerting.",
+              "technologies": "Great Expectations, Airflow"
+            }
+          ]
+        },
+        {
+          "name": "Data Governance & Security",
+          "description": "Managing data access, privacy, and compliance.",
+          "courses": [
+            {
+              "name": "Data Governance, Privacy, and Ethics",
+              "provider": "Coursera (University of Virginia)",
+              "link": "https://www.coursera.org/learn/data-governance"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "RBAC & PII Masking",
+              "description": "Implement roles, masking policies, and audit trails.",
+              "technologies": "Snowflake/Athena, Ranger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cloud Platforms: AWS",
+      "icon": "\u2601\ufe0f",
+      "skills": [
+        {
+          "name": "S3 (Simple Storage Service)",
+          "description": "Object storage for data lakes.",
+          "courses": [
+            {
+              "name": "AWS S3 Masterclass 2024",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-s3-masterclass/"
+            },
+            {
+              "name": "AWS Cloud Technical Essentials",
+              "provider": "Coursera (AWS)",
+              "link": "https://www.coursera.org/learn/aws-cloud-technical-essentials"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Lake on S3",
+              "description": "Organize bronze/silver/gold zones with lifecycle policies.",
+              "technologies": "AWS S3, IAM"
+            }
+          ]
+        },
+        {
+          "name": "EC2 (Elastic Compute Cloud)",
+          "description": "Virtual servers for custom workloads.",
+          "courses": [
+            {
+              "name": "AWS EC2 Masterclass",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-ec2-masterclass/"
+            },
+            {
+              "name": "Ultimate AWS Certified Solutions Architect Associate",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Solutions Architect \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "ETL on EC2",
+              "description": "Provision EC2 for nightly ETL with systemd and CloudWatch.",
+              "technologies": "EC2, CloudWatch"
+            }
+          ]
+        },
+        {
+          "name": "IAM (Identity and Access Management)",
+          "description": "Managing user permissions and security.",
+          "courses": [
+            {
+              "name": "AWS Identity and Access Management (IAM) Deep Dive",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-iam/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Solutions Architect \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Least-Privilege Blueprint",
+              "description": "Design IAM roles/policies for data platform services.",
+              "technologies": "AWS IAM"
+            }
+          ]
+        },
+        {
+          "name": "AWS Lambda",
+          "description": "Serverless compute for event-driven tasks.",
+          "courses": [
+            {
+              "name": "AWS Lambda and the Serverless Framework - Hands On",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-lambda-and-the-serverless-framework-hands-on/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Solutions Architect \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Serverless ETL",
+              "description": "Event-driven transformations on S3 object creation.",
+              "technologies": "Lambda, S3, Python"
+            }
+          ]
+        },
+        {
+          "name": "AWS Glue",
+          "description": "Managed ETL service.",
+          "courses": [
+            {
+              "name": "AWS Glue \u2013 The Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-glue/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Data Engineer \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-data-engineer-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Glue Catalog + Jobs",
+              "description": "Crawl data, create Glue jobs and triggers.",
+              "technologies": "AWS Glue, PySpark"
+            }
+          ]
+        },
+        {
+          "name": "EMR (Elastic MapReduce)",
+          "description": "Managed clusters for big data frameworks.",
+          "courses": [
+            {
+              "name": "Amazon EMR (Elastic MapReduce) Masterclass",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/amazon-emr/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Data Engineer \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-data-engineer-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Spark on EMR",
+              "description": "Run PySpark jobs on EMR with autoscaling.",
+              "technologies": "EMR, Spark"
+            }
+          ]
+        },
+        {
+          "name": "Kinesis",
+          "description": "Real-time data streaming service.",
+          "courses": [
+            {
+              "name": "Amazon Kinesis \u2013 Data Streams & Analytics",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/amazon-kinesis/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Data Engineer \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-data-engineer-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Streaming Ingestion",
+              "description": "Real-time ingestion with Kinesis Data Streams & Firehose.",
+              "technologies": "Kinesis, Lambda"
+            }
+          ]
+        },
+        {
+          "name": "RDS & Aurora",
+          "description": "Managed relational databases.",
+          "courses": [
+            {
+              "name": "AWS RDS and Aurora \u2013 The Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-rds-aurora/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Solutions Architect \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Operational DB with Read Replica",
+              "description": "Set up RDS/Aurora with backups and replica.",
+              "technologies": "RDS/Aurora"
+            }
+          ]
+        },
+        {
+          "name": "AWS CloudFormation",
+          "description": "Infrastructure as Code for AWS.",
+          "courses": [
+            {
+              "name": "AWS CloudFormation \u2013 Bootcamp",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-cloudformation-master-class/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Solutions Architect \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "IaC for Data Stack",
+              "description": "Provision S3, IAM, Glue, Redshift via templates.",
+              "technologies": "CloudFormation, YAML"
+            }
+          ]
+        },
+        {
+          "name": "Athena",
+          "description": "Serverless SQL for S3.",
+          "courses": [
+            {
+              "name": "AWS Athena Masterclass",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/amazon-athena/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Data Engineer \u2013 Associate",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-data-engineer-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Serverless Query Lake",
+              "description": "Query partitioned data in S3 with Glue Catalog.",
+              "technologies": "Athena, SQL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cloud Platforms: GCP",
+      "icon": "\ud83c\udf24\ufe0f",
+      "skills": [
+        {
+          "name": "Cloud Storage",
+          "description": "Object storage for data lakes on GCP.",
+          "courses": [
+            {
+              "name": "Google Cloud Storage - Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-cloud-storage/"
+            },
+            {
+              "name": "Google Cloud Digital Leader Training",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/preparing-cloud-digital-leader"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Digital Leader",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+            }
+          ],
+          "projects": [
+            {
+              "name": "GCS Data Lake",
+              "description": "Buckets with lifecycle rules and BigQuery external tables.",
+              "technologies": "GCS, BigQuery"
+            }
+          ]
+        },
+        {
+          "name": "Compute Engine",
+          "description": "Virtual machines for hosting applications.",
+          "courses": [
+            {
+              "name": "GCP Compute Engine Deep Dive",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-compute-engine/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Digital Leader",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Managed VM ETL Host",
+              "description": "Hardened VM for scheduled jobs and agents.",
+              "technologies": "Compute Engine, Linux"
+            }
+          ]
+        },
+        {
+          "name": "Cloud IAM",
+          "description": "Managing permissions for GCP resources.",
+          "courses": [
+            {
+              "name": "GCP IAM for Beginners to Pro",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-cloud-iam/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Digital Leader",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+            }
+          ],
+          "projects": [
+            {
+              "name": "GCP Least Privilege",
+              "description": "Design service accounts & IAM bindings for data platform.",
+              "technologies": "GCP IAM"
+            }
+          ]
+        },
+        {
+          "name": "Cloud Functions",
+          "description": "Serverless, event-driven compute.",
+          "courses": [
+            {
+              "name": "Google Cloud Functions - Serverless",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-cloud-functions/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Digital Leader",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Serverless Transforms",
+              "description": "Trigger on GCS events, write to BigQuery.",
+              "technologies": "Cloud Functions, Python"
+            }
+          ]
+        },
+        {
+          "name": "Dataflow",
+          "description": "Stream and batch data processing service.",
+          "courses": [
+            {
+              "name": "Serverless Data Processing with Dataflow",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/serverless-data-processing-with-dataflow"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Professional Data Engineer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/certification/data-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Batch + Streaming on Dataflow",
+              "description": "Beam pipelines with windowing & aggregations.",
+              "technologies": "Apache Beam, Dataflow"
+            }
+          ]
+        },
+        {
+          "name": "Dataproc",
+          "description": "Managed service for Spark and Hadoop.",
+          "courses": [
+            {
+              "name": "Building Batch Data Pipelines on GCP",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/batch-data-pipelines-gcp"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Professional Data Engineer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/certification/data-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Spark on Dataproc",
+              "description": "Submit Spark jobs and use autoscaling policies.",
+              "technologies": "Dataproc, Spark"
+            }
+          ]
+        },
+        {
+          "name": "Pub/Sub",
+          "description": "Global real-time messaging service.",
+          "courses": [
+            {
+              "name": "Pub/Sub: Qwik Start & Beyond",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/gcp-pubsub"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Professional Data Engineer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/certification/data-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Event Ingestion with Pub/Sub",
+              "description": "Fan-in events and deliver to BigQuery.",
+              "technologies": "Pub/Sub, Dataflow"
+            }
+          ]
+        },
+        {
+          "name": "Cloud SQL",
+          "description": "Managed relational database service.",
+          "courses": [
+            {
+              "name": "Google Cloud SQL - Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/google-cloud-sql/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Digital Leader",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/learn/certification/cloud-digital-leader"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Managed Postgres/MySQL",
+              "description": "Migrate a small app DB to Cloud SQL.",
+              "technologies": "Cloud SQL"
+            }
+          ]
+        },
+        {
+          "name": "Cloud Composer",
+          "description": "Managed workflow orchestration service.",
+          "courses": [
+            {
+              "name": "Orchestrating Workflows with Cloud Composer",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/orchestrating-workflows-cloud-composer"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Google Cloud Professional Data Engineer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/certification/data-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Managed Airflow DAGs",
+              "description": "Author DAGs and use Secrets/Connections.",
+              "technologies": "Cloud Composer, Airflow"
+            }
+          ]
+        },
+        {
+          "name": "Looker",
+          "description": "BI and data application platform.",
+          "courses": [
+            {
+              "name": "Looker Foundations",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/looker-foundations"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Looker LookML Developer",
+              "provider": "Google Cloud",
+              "link": "https://cloud.google.com/looker/training/certification"
+            }
+          ],
+          "projects": [
+            {
+              "name": "LookML Data Model",
+              "description": "Define explores, views and dashboards.",
+              "technologies": "Looker, LookML"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cloud Platforms: Azure",
+      "icon": "\ud83d\udd37",
+      "skills": [
+        {
+          "name": "Blob Storage",
+          "description": "Object storage for data lakes on Azure.",
+          "courses": [
+            {
+              "name": "Azure Blob Storage - Deep Dive",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-blob-storage/"
+            },
+            {
+              "name": "Microsoft Azure Fundamentals AZ-900",
+              "provider": "Coursera (Microsoft)",
+              "link": "https://www.coursera.org/learn/microsoft-azure-fundamentals-az-900"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Data Fundamentals (DP-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/dp-900/"
+            },
+            {
+              "name": "Microsoft Azure Fundamentals (AZ-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/az-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Azure Data Lake Gen2",
+              "description": "Hierarchical namespaces & ACLs with Synapse external tables.",
+              "technologies": "ADLS Gen2, Synapse"
+            }
+          ]
+        },
+        {
+          "name": "Azure Virtual Machines",
+          "description": "Cloud-based virtual servers.",
+          "courses": [
+            {
+              "name": "Azure Virtual Machines for Beginners",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-virtual-machines/"
+            },
+            {
+              "name": "Microsoft Azure Fundamentals AZ-900",
+              "provider": "Coursera (Microsoft)",
+              "link": "https://www.coursera.org/learn/microsoft-azure-fundamentals-az-900"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Fundamentals (AZ-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/az-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Azure ETL Host",
+              "description": "Provision VM Scale Sets for workers.",
+              "technologies": "Azure VMs"
+            }
+          ]
+        },
+        {
+          "name": "Azure Active Directory",
+          "description": "Identity and access management.",
+          "courses": [
+            {
+              "name": "Azure Active Directory (Entra ID) Basics",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-active-directory/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Fundamentals (AZ-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/az-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Entra ID for Data",
+              "description": "Groups, app registrations, and role assignments.",
+              "technologies": "Azure AD (Entra)"
+            }
+          ]
+        },
+        {
+          "name": "Azure Functions",
+          "description": "Serverless compute on Azure.",
+          "courses": [
+            {
+              "name": "Azure Functions - Serverless",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-functions-serverless/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Fundamentals (AZ-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/az-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Serverless Ingestion",
+              "description": "Blob-triggered data processing.",
+              "technologies": "Azure Functions, Python"
+            }
+          ]
+        },
+        {
+          "name": "Azure Data Factory",
+          "description": "Cloud-based data integration service.",
+          "courses": [
+            {
+              "name": "Azure Data Factory - Hands On",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-data-factory/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Data Fundamentals (DP-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/dp-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Synapse + ADF Pipelines",
+              "description": "Copy activities, Data Flows, triggers.",
+              "technologies": "ADF, Synapse"
+            }
+          ]
+        },
+        {
+          "name": "Azure Synapse Analytics",
+          "description": "Unified analytics platform.",
+          "courses": [
+            {
+              "name": "Azure Synapse Analytics Masterclass",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-synapse-analytics/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Azure Data Fundamentals (DP-900)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/certifications/exams/dp-900/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Synapse Lakehouse",
+              "description": "SQL serverless & Spark pools with Delta tables.",
+              "technologies": "Synapse, Spark"
+            }
+          ]
+        },
+        {
+          "name": "HDInsight",
+          "description": "Managed open-source analytics.",
+          "courses": [
+            {
+              "name": "Azure HDInsight - Hadoop in the Cloud",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-hdinsight/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Hadoop on Azure",
+              "description": "Run Hive/Spark jobs on HDInsight clusters.",
+              "technologies": "HDInsight"
+            }
+          ]
+        },
+        {
+          "name": "Event Hubs",
+          "description": "Real-time data ingestion.",
+          "courses": [
+            {
+              "name": "Azure Event Hubs - Hands On",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/azure-event-hubs/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Real-time Telemetry",
+              "description": "Ingest telemetry and route to Storage/Synapse.",
+              "technologies": "Event Hubs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Big Data Technologies",
+      "icon": "\ud83d\uddc3\ufe0f",
+      "skills": [
+        {
+          "name": "Apache Spark",
+          "description": "Large-scale distributed data processing.",
+          "courses": [
+            {
+              "name": "Spark and Python for Big Data with PySpark",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/spark-and-python-for-big-data-with-pyspark/"
+            },
+            {
+              "name": "Big Data Analysis with Scala and Spark",
+              "provider": "Coursera (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)",
+              "link": "https://www.coursera.org/learn/scala-spark-big-data"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Databricks Certified Data Engineer Associate",
+              "provider": "Databricks",
+              "link": "https://www.databricks.com/learn/certification/data-engineer-associate"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Batch + Streaming with Spark",
+              "description": "ETL + Structured Streaming with checkpoints.",
+              "technologies": "Spark, Kafka"
+            }
+          ]
+        },
+        {
+          "name": "PySpark",
+          "description": "Python API for Spark.",
+          "courses": [
+            {
+              "name": "Spark and Python for Big Data with PySpark",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/spark-and-python-for-big-data-with-pyspark/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Databricks Certified Data Engineer Associate",
+              "provider": "Databricks",
+              "link": "https://www.databricks.com/learn/certification/data-engineer-associate"
+            }
+          ],
+          "projects": [
+            {
+              "name": "PySpark Data Lake ETL",
+              "description": "Transform raw data to curated Parquet.",
+              "technologies": "PySpark, Delta"
+            }
+          ]
+        },
+        {
+          "name": "Hadoop Ecosystem",
+          "description": "HDFS, MapReduce, YARN basics.",
+          "courses": [
+            {
+              "name": "The Ultimate Hands-On Hadoop",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/the-ultimate-hands-on-hadoop/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "HDFS + YARN Lab",
+              "description": "Ingest, MapReduce, and Hive-on-Tez.",
+              "technologies": "Hadoop, Hive"
+            }
+          ]
+        },
+        {
+          "name": "Hive",
+          "description": "Data warehouse on Hadoop.",
+          "courses": [
+            {
+              "name": "Apache Hive for Data Engineers",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/apache-hive-for-data-engineers/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Hive Warehouse",
+              "description": "Partitioned tables and ACID features.",
+              "technologies": "Hive, Tez"
+            }
+          ]
+        },
+        {
+          "name": "Presto / Trino",
+          "description": "Distributed SQL query engine.",
+          "courses": [
+            {
+              "name": "Presto & Trino: SQL on Big Data",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/presto-trino/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "SQL on Object Storage",
+              "description": "Query S3/GCS via Trino catalog.",
+              "technologies": "Trino, S3/GCS"
+            }
+          ]
+        },
+        {
+          "name": "Data Lake Table Formats",
+          "description": "Hudi, Iceberg, Delta Lake.",
+          "courses": [
+            {
+              "name": "Apache Hudi, Iceberg & Delta Lake Explained",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/apache-hudi-iceberg-delta/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Time-Travel Data Lake",
+              "description": "Demonstrate upserts and time travel.",
+              "technologies": "Delta/Iceberg/Hudi"
+            }
+          ]
+        },
+        {
+          "name": "Dask",
+          "description": "Parallel computing in Python.",
+          "courses": [
+            {
+              "name": "Dask: Parallel Computing with Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/dask-parallel-computing-with-python/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Scale Pandas with Dask",
+              "description": "Parallelize a large ETL with Dask dataframes.",
+              "technologies": "Dask, Parquet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data Orchestration & Transformation",
+      "icon": "\ud83e\udde9",
+      "skills": [
+        {
+          "name": "Apache Airflow",
+          "description": "Programmatic workflow orchestration.",
+          "courses": [
+            {
+              "name": "Apache Airflow: The Hands-On Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Astronomer Certification for Apache Airflow",
+              "provider": "Astronomer",
+              "link": "https://www.astronomer.io/events/astronomer-certification/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Production DAGs",
+              "description": "DAGs with retries, SLAs, sensors, and alerts.",
+              "technologies": "Airflow, Docker"
+            }
+          ]
+        },
+        {
+          "name": "Prefect / Dagster",
+          "description": "Modern orchestration alternatives.",
+          "courses": [
+            {
+              "name": "Prefect 2.0 - Dataflow Automation",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/prefect-dataflow-automation/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Prefect Flows",
+              "description": "Orchestrate dataflows with blocks and deployments.",
+              "technologies": "Prefect 2.0"
+            }
+          ]
+        },
+        {
+          "name": "dbt (data build tool)",
+          "description": "Transformations for the 'T' in ELT.",
+          "courses": [
+            {
+              "name": "Analytics Engineering with dbt",
+              "provider": "Coursera (dbt Labs)",
+              "link": "https://www.coursera.org/learn/analytics-engineering-dbt"
+            },
+            {
+              "name": "dbt (Data Build Tool) Fundamentals",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/dbt-fundamentals/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "dbt Analytics Engineering Certification",
+              "provider": "dbt Labs",
+              "link": "https://www.getdbt.com/certifications/analytics-engineer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Analytics Engineering Project",
+              "description": "Staging & marts with tests and docs.",
+              "technologies": "dbt, BigQuery/Snowflake"
+            }
+          ]
+        },
+        {
+          "name": "AWS Step Functions",
+          "description": "Serverless function orchestrator.",
+          "courses": [
+            {
+              "name": "AWS Step Functions - Serverless Orchestration",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-step-functions/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Serverless Workflow",
+              "description": "ETL orchestration across Lambdas.",
+              "technologies": "Step Functions"
+            }
+          ]
+        },
+        {
+          "name": "Luigi",
+          "description": "Pipelines of batch jobs.",
+          "courses": [
+            {
+              "name": "Data Pipelines with Luigi",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-pipelines-with-luigi/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Luigi Pipeline",
+              "description": "Task dependencies and idempotent jobs.",
+              "technologies": "Luigi, Python"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Streaming & Real-time Processing",
+      "icon": "\u26a1",
+      "skills": [
+        {
+          "name": "Apache Kafka",
+          "description": "Distributed event streaming platform.",
+          "courses": [
+            {
+              "name": "Apache Kafka for Beginners",
+              "provider": "Coursera (Confluent)",
+              "link": "https://www.coursera.org/learn/apache-kafka-for-beginners"
+            },
+            {
+              "name": "Apache Kafka Series - Learn Apache Kafka for Beginners",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/apache-kafka/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Confluent Certified Developer for Apache Kafka",
+              "provider": "Confluent",
+              "link": "https://www.confluent.io/certification/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Event Streaming Platform",
+              "description": "Producers/consumers, schemas, and ksqlDB.",
+              "technologies": "Kafka, Schema Registry"
+            }
+          ]
+        },
+        {
+          "name": "Spark Structured Streaming",
+          "description": "Scalable stream processing on Spark.",
+          "courses": [
+            {
+              "name": "Spark and Python for Big Data with PySpark",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/spark-and-python-for-big-data-with-pyspark/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Streaming ETL",
+              "description": "Read from Kafka, write Delta with watermarking.",
+              "technologies": "Spark Structured Streaming"
+            }
+          ]
+        },
+        {
+          "name": "Apache Flink",
+          "description": "Stateful stream processing.",
+          "courses": [
+            {
+              "name": "Apache Flink - Hands On",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/apache-flink/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Stream Processing App",
+              "description": "CEP and exactly-once stateful operators.",
+              "technologies": "Apache Flink"
+            }
+          ]
+        },
+        {
+          "name": "Message Queues",
+          "description": "Async messaging patterns (RabbitMQ, SQS).",
+          "courses": [
+            {
+              "name": "Message Queues with RabbitMQ",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/rabbitmq/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Async Work Queue",
+              "description": "Publish/consume tasks with retries & DLQ.",
+              "technologies": "RabbitMQ/SQS"
+            }
+          ]
+        },
+        {
+          "name": "Change Data Capture (CDC)",
+          "description": "Capture DB changes (Debezium).",
+          "courses": [
+            {
+              "name": "Change Data Capture with Debezium & Kafka",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/change-data-capture-debezium-kafka/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Change Data Capture",
+              "description": "Debezium from Postgres to Kafka.",
+              "technologies": "Debezium, Kafka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Databases (SQL & NoSQL)",
+      "icon": "\ud83d\uddc4\ufe0f",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "description": "Advanced open-source relational database.",
+          "courses": [
+            {
+              "name": "The Complete SQL and PostgreSQL Developer Course",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/sql-and-postgresql-for-beginners/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "PostgreSQL Associate Certification",
+              "provider": "EDB",
+              "link": "https://www.enterprisedb.com/training/certification"
+            }
+          ],
+          "projects": [
+            {
+              "name": "OLTP to OLAP",
+              "description": "Design normalized schema + analytical queries.",
+              "technologies": "PostgreSQL, SQL"
+            }
+          ]
+        },
+        {
+          "name": "MySQL",
+          "description": "Popular open-source relational database.",
+          "courses": [
+            {
+              "name": "MySQL Bootcamp: Go from SQL Beginner to Expert",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/the-complete-sql-bootcamp/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "E-commerce DB",
+              "description": "Indexes, replication, and backups.",
+              "technologies": "MySQL"
+            }
+          ]
+        },
+        {
+          "name": "NoSQL Concepts",
+          "description": "Document, key-value, columnar, graph models.",
+          "courses": [
+            {
+              "name": "MongoDB - The Complete Developer's Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Polyglot Persistence Demo",
+              "description": "Document, key-value, and columnar stores.",
+              "technologies": "MongoDB, Redis, Cassandra"
+            }
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "description": "Document-oriented database.",
+          "courses": [
+            {
+              "name": "MongoDB - The Complete Developer's Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "MongoDB Certified Developer Associate",
+              "provider": "MongoDB",
+              "link": "https://www.mongodb.com/certification/developer"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Catalog Service",
+              "description": "Schema design with aggregation pipeline.",
+              "technologies": "MongoDB"
+            }
+          ]
+        },
+        {
+          "name": "Cassandra",
+          "description": "Distributed wide-column store.",
+          "courses": [
+            {
+              "name": "Apache Cassandra for Developers",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/apache-cassandra/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "DataStax Apache Cassandra Developer Associate",
+              "provider": "DataStax",
+              "link": "https://www.datastax.com/learn/certification"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Time-series Data Store",
+              "description": "Modeling for wide-column workloads.",
+              "technologies": "Cassandra"
+            }
+          ]
+        },
+        {
+          "name": "DynamoDB",
+          "description": "AWS managed NoSQL database.",
+          "courses": [
+            {
+              "name": "DynamoDB - The Complete Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/aws-dynamodb/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Serverless NoSQL",
+              "description": "Single-table design with GSIs.",
+              "technologies": "DynamoDB"
+            }
+          ]
+        },
+        {
+          "name": "Redis",
+          "description": "In-memory data store and cache.",
+          "courses": [
+            {
+              "name": "Redis: The Complete Developer's Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/redis-the-complete-developers-guide/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Redis Certified Developer",
+              "provider": "Redis",
+              "link": "https://university.redis.com/certification/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Caching Layer",
+              "description": "Read-through cache for an API.",
+              "technologies": "Redis, FastAPI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Software Engineering & DevOps",
+      "icon": "\ud83d\udee0\ufe0f",
+      "skills": [
+        {
+          "name": "Git / Version Control",
+          "description": "Source code management.",
+          "courses": [
+            {
+              "name": "Git & GitHub - Practical Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/git-and-github/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Monorepo Data Platform",
+              "description": "Branching strategy, hooks, and PR templates.",
+              "technologies": "Git, GitHub Actions"
+            }
+          ]
+        },
+        {
+          "name": "CI/CD (Continuous Integration/Continuous Deployment)",
+          "description": "Automating software delivery pipelines.",
+          "courses": [
+            {
+              "name": "CI/CD with Jenkins, GitHub Actions & Docker",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/ci-cd-jenkins-github-actions/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Pipeline-as-Code",
+              "description": "Build/test/deploy data apps automatically.",
+              "technologies": "GitHub Actions, Jenkins"
+            }
+          ]
+        },
+        {
+          "name": "Jenkins / GitHub Actions",
+          "description": "CI/CD automation servers.",
+          "courses": [
+            {
+              "name": "Jenkins, From Zero to Hero",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/jenkins-from-zero-to-hero/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Jenkins Shared Library",
+              "description": "Reusable pipeline library for data teams.",
+              "technologies": "Jenkins, Groovy"
+            }
+          ]
+        },
+        {
+          "name": "Docker",
+          "description": "Containerization technology.",
+          "courses": [
+            {
+              "name": "Docker & Kubernetes: The Practical Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/docker-kubernetes-the-practical-guide/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Containerized ETL",
+              "description": "Dockerize Spark/airflow apps.",
+              "technologies": "Docker, Makefile"
+            }
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "description": "Container orchestration platform.",
+          "courses": [
+            {
+              "name": "Architecting with Kubernetes Engine",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/specializations/google-kubernetes-engine"
+            },
+            {
+              "name": "Docker & Kubernetes: The Practical Guide",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/docker-kubernetes-the-practical-guide/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Certified Kubernetes Administrator (CKA)",
+              "provider": "CNCF",
+              "link": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+            },
+            {
+              "name": "Certified Kubernetes Application Developer (CKAD)",
+              "provider": "CNCF",
+              "link": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Data Platform on K8s",
+              "description": "Operators, Helm charts, and autoscaling.",
+              "technologies": "Kubernetes, Helm"
+            }
+          ]
+        },
+        {
+          "name": "Infrastructure as Code (IaC)",
+          "description": "Manage infrastructure via code.",
+          "courses": [
+            {
+              "name": "Terraform on AWS with SRE & IaC",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/learn-terraform/"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "HashiCorp Certified: Terraform Associate",
+              "provider": "HashiCorp",
+              "link": "https://www.hashicorp.com/certification/terraform-associate"
+            }
+          ],
+          "projects": [
+            {
+              "name": "IaC for Lakehouse",
+              "description": "Reusable Terraform modules for data stack.",
+              "technologies": "Terraform, AWS/GCP/Azure"
+            }
+          ]
+        },
+        {
+          "name": "API Development (REST)",
+          "description": "Building and consuming APIs.",
+          "courses": [
+            {
+              "name": "REST APIs with FastAPI",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/fastapi-the-complete-course/"
+            },
+            {
+              "name": "REST APIs with Flask and Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/rest-api-flask-and-python/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Access API",
+              "description": "CRUD + analytics endpoints with auth.",
+              "technologies": "FastAPI/Flask, OpenAPI"
+            }
+          ]
+        },
+        {
+          "name": "Python Web Frameworks",
+          "description": "FastAPI or Flask for APIs.",
+          "courses": [
+            {
+              "name": "REST APIs with FastAPI",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/fastapi-the-complete-course/"
+            },
+            {
+              "name": "REST APIs with Flask and Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/rest-api-flask-and-python/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Feature Store Service",
+              "description": "Serve features to models with caching.",
+              "technologies": "FastAPI, Redis"
+            }
+          ]
+        },
+        {
+          "name": "Testing",
+          "description": "Unit, integration & data quality testing.",
+          "courses": [
+            {
+              "name": "Unit Testing & Test-Driven Development in Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/unit-testing-python/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Test Suite for ETL",
+              "description": "Unit/integration tests + data validations.",
+              "technologies": "pytest, Great Expectations"
+            }
+          ]
+        },
+        {
+          "name": "Monitoring & Logging",
+          "description": "Observability for data systems.",
+          "courses": [
+            {
+              "name": "Prometheus, Grafana, and Alerting",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/prometheus/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Observability Stack",
+              "description": "Metrics, logs, tracing for pipelines.",
+              "technologies": "Prometheus, Grafana"
+            }
+          ]
+        },
+        {
+          "name": "Splunk",
+          "description": "Search, monitor, analyze machine data.",
+          "courses": [
+            {
+              "name": "Splunk for Beginners",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/splunk/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Log Analytics",
+              "description": "Ingest logs and build dashboards/alerts.",
+              "technologies": "Splunk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MLOps & AI Engineering",
+      "icon": "\ud83e\udd16",
+      "skills": [
+        {
+          "name": "ML Fundamentals",
+          "description": "ML lifecycle, evaluation, and pipelines.",
+          "courses": [
+            {
+              "name": "Machine Learning Specialization",
+              "provider": "Coursera (Andrew Ng)",
+              "link": "https://www.coursera.org/specializations/machine-learning-introduction"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "AWS Certified Machine Learning \u2013 Specialty",
+              "provider": "AWS",
+              "link": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "ML Pipeline",
+              "description": "Train/validate models with reproducibility.",
+              "technologies": "scikit-learn, MLflow"
+            }
+          ]
+        },
+        {
+          "name": "Feature Engineering",
+          "description": "Create and manage features for ML.",
+          "courses": [
+            {
+              "name": "Feature Engineering for ML",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/feature-engineering-for-machine-learning/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Feature Store",
+              "description": "Feature pipelines with offline/online stores.",
+              "technologies": "Feast, Pandas"
+            }
+          ]
+        },
+        {
+          "name": "Model Deployment & Serving",
+          "description": "Make models available for inference.",
+          "courses": [
+            {
+              "name": "Model Deployment: FastAPI, Docker & AWS",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/ml-model-deployment-fastapi-docker-aws/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Real-time Inference",
+              "description": "Serve model with canary deployments.",
+              "technologies": "FastAPI, Docker"
+            }
+          ]
+        },
+        {
+          "name": "MLOps Platforms",
+          "description": "MLflow, Kubeflow, pipelines and tracking.",
+          "courses": [
+            {
+              "name": "MLflow: Production Machine Learning",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/mlflow/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Full MLOps Stack",
+              "description": "Tracking, registry, and CI/CD for models.",
+              "technologies": "MLflow, DVC"
+            }
+          ]
+        },
+        {
+          "name": "Cloud ML Services",
+          "description": "SageMaker or Vertex AI for managed ML.",
+          "courses": [
+            {
+              "name": "Practical Data Science on AWS",
+              "provider": "Coursera (DeepLearning.AI & AWS)",
+              "link": "https://www.coursera.org/specializations/aws-machine-learning"
+            },
+            {
+              "name": "MLOps with Vertex AI",
+              "provider": "Coursera (Google Cloud)",
+              "link": "https://www.coursera.org/learn/mlops-vertex-ai"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "SageMaker Training + Deploy",
+              "description": "Bring-your-own container + endpoints.",
+              "technologies": "SageMaker"
+            }
+          ]
+        },
+        {
+          "name": "LLM Concepts",
+          "description": "Foundational models, fine-tuning, prompting.",
+          "courses": [
+            {
+              "name": "Generative AI with Large Language Models",
+              "provider": "Coursera (DeepLearning.AI & AWS)",
+              "link": "https://www.coursera.org/learn/generative-ai-with-llms"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Prompt + Eval Suite",
+              "description": "Prompt library with evaluations.",
+              "technologies": "LangChain, OpenAI"
+            }
+          ]
+        },
+        {
+          "name": "RAG (Retrieval-Augmented Generation)",
+          "description": "Combine LLMs with external data.",
+          "courses": [
+            {
+              "name": "Building RAG Applications with LLMs",
+              "provider": "Coursera (DeepLearning.AI)",
+              "link": "https://www.coursera.org/learn/building-rag-applications"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "RAG QA System",
+              "description": "Chunking, embeddings, retrieval, generation.",
+              "technologies": "LangChain, FAISS/Pinecone"
+            }
+          ]
+        },
+        {
+          "name": "Vector Databases",
+          "description": "Manage embeddings at scale.",
+          "courses": [
+            {
+              "name": "Vector Databases & Semantic Search",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/vector-databases/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Semantic Search",
+              "description": "Build a semantic search API.",
+              "technologies": "Weaviate/Chroma/Pinecone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analytics, BI & Soft Skills",
+      "icon": "\ud83d\udcca",
+      "skills": [
+        {
+          "name": "Power BI",
+          "description": "Microsoft's business analytics platform.",
+          "courses": [
+            {
+              "name": "Getting Started with Power BI Desktop",
+              "provider": "Coursera (IBM)",
+              "link": "https://www.coursera.org/learn/power-bi-desktop"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+              "provider": "Microsoft",
+              "link": "https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Executive Dashboard",
+              "description": "Star schema + DAX measures.",
+              "technologies": "Power BI Desktop"
+            }
+          ]
+        },
+        {
+          "name": "Tableau",
+          "description": "Leading data visualization tool.",
+          "courses": [
+            {
+              "name": "Data Visualization with Tableau",
+              "provider": "Coursera (UC Davis)",
+              "link": "https://www.coursera.org/specializations/data-visualization"
+            }
+          ],
+          "certifications": [
+            {
+              "name": "Tableau Desktop Specialist",
+              "provider": "Tableau",
+              "link": "https://www.tableau.com/learn/certification/tableau-desktop-specialist"
+            }
+          ],
+          "projects": [
+            {
+              "name": "Interactive Sales Dashboard",
+              "description": "Parameters, LODs, actions.",
+              "technologies": "Tableau Desktop"
+            }
+          ]
+        },
+        {
+          "name": "Streamlit",
+          "description": "Interactive data apps in Python.",
+          "courses": [
+            {
+              "name": "Building Data Apps with Streamlit",
+              "provider": "Coursera (Snowflake/Partners)",
+              "link": "https://www.coursera.org/learn/streamlit"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data App",
+              "description": "Self-serve analytics app.",
+              "technologies": "Streamlit, Python"
+            }
+          ]
+        },
+        {
+          "name": "Data Analysis",
+          "description": "Interpret data and derive insights.",
+          "courses": [
+            {
+              "name": "Data Analysis with Pandas & Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-analysis-with-pandas/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Insights Report",
+              "description": "EDA + storytelling with visuals.",
+              "technologies": "Pandas, Matplotlib"
+            }
+          ]
+        },
+        {
+          "name": "Cost Optimization",
+          "description": "Manage cloud and resource spending.",
+          "courses": [
+            {
+              "name": "Cloud Cost Optimization (AWS/GCP/Azure)",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/cloud-cost-optimization/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "FinOps Playbook",
+              "description": "Budgets, rightsizing, lifecycle policies.",
+              "technologies": "AWS/GCP/Azure"
+            }
+          ]
+        },
+        {
+          "name": "Performance Optimization",
+          "description": "Tuning queries, jobs, infra for speed.",
+          "courses": [
+            {
+              "name": "SQL & Spark Performance Tuning",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/performance-tuning-sql-spark/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "SQL/Spark Tuning Guide",
+              "description": "Benchmarks and optimizations.",
+              "technologies": "SQL, Spark"
+            }
+          ]
+        },
+        {
+          "name": "System Design",
+          "description": "Architect scalable and resilient systems.",
+          "courses": [
+            {
+              "name": "System Design for Big Data",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/system-design-big-data/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Architecture Docs",
+              "description": "HLDs with trade-offs and diagrams.",
+              "technologies": "C4 Model, draw.io"
+            }
+          ]
+        },
+        {
+          "name": "Problem-Solving",
+          "description": "Analytical and critical thinking.",
+          "courses": [
+            {
+              "name": "Data Analysis with Pandas & Python",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/data-analysis-with-pandas/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Puzzle ETL",
+              "description": "Solve real data puzzles & katas.",
+              "technologies": "Python, SQL"
+            }
+          ]
+        },
+        {
+          "name": "Stakeholder Communication",
+          "description": "Explain technical concepts clearly.",
+          "courses": [
+            {
+              "name": "Business Writing",
+              "provider": "Coursera (UCI)",
+              "link": "https://www.coursera.org/learn/business-writing"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Tech Blog Series",
+              "description": "Write 3 posts on data topics.",
+              "technologies": "Markdown, Hugo"
+            }
+          ]
+        },
+        {
+          "name": "Project Management",
+          "description": "Agile/Scrum methodologies.",
+          "courses": [
+            {
+              "name": "Project Management Principles and Practices",
+              "provider": "Coursera (UCI)",
+              "link": "https://www.coursera.org/specializations/project-management"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Agile Board Setup",
+              "description": "Kanban board for data team.",
+              "technologies": "Jira/GitHub Projects"
+            }
+          ]
+        },
+        {
+          "name": "Team Collaboration",
+          "description": "Working effectively within a team.",
+          "courses": [
+            {
+              "name": "Teamwork Skills: Communicating Effectively",
+              "provider": "Coursera (UCI)",
+              "link": "https://www.coursera.org/learn/teamwork-skills-effective-communication"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Playbooks",
+              "description": "Contribution guides and code review checklist.",
+              "technologies": "Markdown, GitHub"
+            }
+          ]
+        },
+        {
+          "name": "Documentation",
+          "description": "Create clear and useful documentation.",
+          "courses": [
+            {
+              "name": "Technical Writing: How to Write Docs",
+              "provider": "Udemy",
+              "link": "https://www.udemy.com/course/technical-writing-and-editing/"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Data Docs Hub",
+              "description": "Centralized docs with diagrams and ADRs.",
+              "technologies": "MkDocs, Diagrams"
+            }
+          ]
+        },
+        {
+          "name": "Technical Leadership & Mentoring",
+          "description": "Guide junior engineers and direction.",
+          "courses": [
+            {
+              "name": "Influencing People",
+              "provider": "Coursera (Michigan)",
+              "link": "https://www.coursera.org/learn/influencing-people"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Mentorship Program",
+              "description": "Onboarding curriculum and growth plans.",
+              "technologies": "Notion, Google Docs"
+            }
+          ]
+        },
+        {
+          "name": "Business Acumen",
+          "description": "Understand business context and goals.",
+          "courses": [
+            {
+              "name": "Business Strategy",
+              "provider": "Coursera (Virginia)",
+              "link": "https://www.coursera.org/specializations/uva-darden-business-strategy"
+            }
+          ],
+          "certifications": [],
+          "projects": [
+            {
+              "name": "Metrics Framework",
+              "description": "Define North Star metrics & KPIs.",
+              "technologies": "SQL, BI Tool"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
