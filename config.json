@@ -42,17 +42,110 @@
     {
       "category": "Cloud & Infrastructure",
       "icon": "",
-      "skills": ["AWS", "Google Cloud Platform", "Snowflake", "Data Warehousing", "Cost Optimization"]
+      "skills": [
+        {
+          "name": "AWS",
+          "certifications": [
+            {
+              "name": "Solutions Architect - Associate",
+              "provider": "AWS",
+              "link": "https://www.credly.com/badges/e730e07f-527f-460a-8187-23aabc04fad0"
+            }
+          ],
+          "courses": [],
+          "projects": []
+        },
+        {
+          "name": "Google Cloud Platform",
+          "certifications": [
+            {
+              "name": "Associate Cloud Engineer",
+              "provider": "Google Cloud Platform",
+              "link": "https://www.credly.com/earner/earned/badge/406d8201-1af5-40cf-b0fe-32482beff7f8"
+            }
+          ],
+          "courses": [],
+          "projects": []
+        },
+        {
+          "name": "Snowflake",
+          "certifications": [
+            {
+              "name": "SnowPro Core Certified",
+              "provider": "Snowflake",
+              "link": "https://achieve.snowflake.com/981e3660-dafc-4b4c-a42d-ff858d0bf841#acc.evfXjHRY"
+            }
+          ],
+          "courses": [],
+          "projects": []
+        },
+        {
+          "name": "Data Warehousing",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "Cost Optimization",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        }
+      ]
     },
     {
       "category": "Programming & Automation",
       "icon": "",
-      "skills": ["Python", "SQL", "Automation", "Streamlit", "APIs"]
+      "skills": [
+        {
+          "name": "Python",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "SQL",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "Automation",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "Streamlit",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "APIs",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        }
+      ]
     },
     {
       "category": "Analytics & Visualization",
       "icon": "",
-      "skills": ["Power BI", "Data Analysis"]
+      "skills": [
+        {
+          "name": "Power BI",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        },
+        {
+          "name": "Data Analysis",
+          "courses": [],
+          "certifications": [],
+          "projects": []
+        }
+      ]
     }
   ],
   "experience": [
